@@ -1,0 +1,25 @@
+{
+	"index.html": {
+		"resources": [
+			"img/home/caogao.png",
+			"img/home/menu.png",
+			"img/home/comment.png",
+			"img/home/right.png",
+			"img/home/seave.png",
+			"img/home/indent.png",
+			"img/home/add.png",
+			"css/index.css",
+			"img/home/youcheng.png",
+			"img/home/home.png",
+			"img/home/my.png",
+			"img/home/trade.png",
+			"img/home/fans.png",
+			"img/home/mess.png",
+			"img/home/shop.png",
+			"img/home/head.png",
+			"css/reset.css",
+			"img/home/wuliu.png",
+			"img/home/money.png"
+		]
+	}
+}

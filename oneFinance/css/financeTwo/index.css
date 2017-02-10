@@ -1,0 +1,132 @@
+@import url(../reset.css);
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background-color: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3.6rem;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 3.6rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.wrap header h1 {
+  -webkit-box-flex: 1;
+  color: #101010;
+  font-size: 1.6rem;
+}
+.wrap header .back {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: none;
+}
+.wrap header .back img {
+  width: 1rem;
+  height: auto;
+  background-color: none;
+  vertical-align: middle;
+}
+.wrap header .mess {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: none;
+}
+.wrap header .mess img {
+  width: 1.6rem;
+  height: auto;
+  background-color: none;
+  vertical-align: middle;
+}
+.wrap section {
+  background-color: #F2F2F2;
+  -webkit-box-flex: 1;
+}
+.wrap section .menuBox {
+  width: 100%;
+  height: 3.2rem;
+  background-color: #ffffff;
+  padding: 0.4rem 0;
+  box-sizing: border-box;
+}
+.wrap section .menuBox .menu ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .menuBox .menu ul li {
+  text-align: center;
+  -webkit-box-flex: 1;
+  height: 2.8rem;
+}
+.wrap section .menuBox .menu ul li img {
+  width: 0.9rem;
+  height: auto;
+  background-color: none;
+  margin-left: 0.4rem;
+}
+.wrap section .menuBox .menu ul li a {
+  color: #3d3d3d;
+  border-right: 1px solid #ebebeb;
+  display: block;
+  line-height: 2.4rem;
+}
+.wrap section .menuBox .menu ul .addColor {
+  border-bottom: 1px solid #ff6b05;
+}
+.wrap section .menuBox .menu ul .addColor a {
+  color: #ff6b05;
+}
+.wrap section .menuBox .menu ul li:last-child a {
+  border: none;
+}
+.wrap section .listBox {
+  width: 100%;
+  height: 4.2rem;
+  background-color: #ffffff;
+  padding: 0.8rem 0.9rem;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+}
+.wrap section .listBox .list {
+  color: #797979;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .listBox .list .time {
+  width: 50%;
+  height: 2.4rem;
+  background-color: none;
+}
+.wrap section .listBox .list .time p {
+  line-height: 1.2rem;
+}
+.wrap section .listBox .list .time .addBlue {
+  color: #6a6cba;
+}
+.wrap section .listBox .list .time .addRed {
+  color: #f65253;
+}
+.wrap section .listBox .list .end {
+  width: 50%;
+  height: 2.4rem;
+  background-color: none;
+  text-align: right;
+}
+.wrap section .listBox .list .end p {
+  line-height: 1.2rem;
+}
+.wrap section .listBox .list .end .addOrange {
+  color: #fe8837;
+}

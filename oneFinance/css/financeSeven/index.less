@@ -1,0 +1,181 @@
+@import url(../reset.css);
+.box(@var:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @var;
+}
+.whb(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+html,body,.wrap{
+    .whb(100%,100%,none);
+}
+html{
+    font-size: 62.5%;
+}
+.wrap{
+    .box(vertical);
+    header{
+        .whb(100%,3.6rem,#ff7f1c);
+        .box;
+        text-align: center;
+        line-height: 3.6rem;
+        border-bottom: 1px solid #ffb378;
+        h1{
+            -webkit-box-flex: 1;
+            color: white;
+            font-size: 1.6rem;
+        }
+        .back{
+            .whb(3.6rem,3.6rem,none);
+            img{
+                .whb(1rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+        .mess{
+            .whb(3.6rem,3.6rem,none);
+            img{
+                .whb(1.6rem,auto,none);
+                 vertical-align: middle;
+            }
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background-color: #F2F2F2;
+        overflow-y: auto;
+        .moneyBox{
+            .whb(100%,16.8rem,white);
+            padding: 0.8rem 1.8rem;
+            box-sizing: border-box;
+            .money{
+                .more{
+                    .whb(100%,2.6rem,none);
+                    text-align: right;
+                    button{
+                        .whb(5.2rem,1.8rem,white);
+                        outline: none;
+                        border: 1px solid #fea562;
+                        color: #fea562;
+                        border-radius: 0.3rem;
+                    }
+                }
+                .word{
+                    text-align: center;
+                    h1{
+                        height: 2.4rem;
+                        color: #474747;
+                        font-size: 1.4rem;
+                    }
+                    p:nth-last-of-type(3){
+                        color: #fd7713;
+                        font-size: 1.4rem;
+                    }
+                    p:nth-last-of-type(2){
+                        color: #9c9c9c;
+                        line-height: 1.4rem;
+                        font-size: 1.2rem;
+                    }
+                    p:nth-last-of-type(1){
+                        color: #868686;
+                        line-height: 2.4rem;
+                        font-size: 1rem;
+                        em{
+                            color: #f98b3b;
+                        }
+                    }
+                }
+                .Btn{
+                    text-align: center;
+                    margin-top: 2rem;
+                    button{
+                        .whb(7rem,2.6rem,#ff7f1c);
+                        outline: none;
+                        border: none;
+                        color: white;
+                        border-radius: 1.5rem;
+                        font-size: 1.4rem;
+                        margin-right: 4.6rem;
+                    }
+                    button:nth-of-type(2){
+                        border: 1px solid #d6d6d6;
+                        background-color: white;
+                        color: #ff7f1c;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .changeBox{
+            .whb(100%,2.6rem,white);
+            padding:0 1rem ;
+            box-sizing: border-box;
+            margin: 0.4rem 0;
+            .change{
+                line-height: 2.6rem;
+                .box;
+                .zhi{
+                    img{
+                        .whb(1.4rem,auto,none);
+                        vertical-align: middle;
+                    }
+                }
+                &>p{
+                   -webkit-box-flex: 1;
+                   margin-left: 0.4rem; 
+                   font-size: 1.2rem;
+                   color: #151515;
+                }
+                .right{
+                    img{
+                        .whb(0.6rem,auto,none);
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .detail{
+            .whb(100%,2.4rem,white);
+            color: #2f2f2f;
+            font-size: 1.4rem;
+            padding-left: 1rem;
+            box-sizing: border-box;
+            line-height: 2.4rem;
+        }
+        .listBox{
+            .whb(100%,4.2rem,white);
+            padding: 0.8rem 0.9rem;
+            border: 1px solid #fafafa;
+            box-sizing: border-box;
+            .list{
+                color: #797979;
+                .box;
+                .time{
+                    p{
+                        line-height: 1.2rem;
+                    }
+                   .whb(50%,2.4rem,none);
+                   .addBlue{
+                       color: #6a6cba;
+                   }
+                   .addRed{
+                       color: #f65253;
+                   }
+                }
+                .end{
+                    .whb(50%,2.4rem,none);
+                    text-align: right;
+                    p{
+                        line-height: 1.2rem;
+                    }
+                    .addOrange{
+                        color: #fe8837;
+                    }
+                }
+                
+            }
+        }
+    }
+}

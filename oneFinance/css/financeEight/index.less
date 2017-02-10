@@ -1,0 +1,88 @@
+@import url(../reset.css);
+.box(@var:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @var;
+}
+.whb(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+html,body,.wrap{
+    .whb(100%,100%,none);
+}
+html{
+    font-size: 62.5%;
+}
+.wrap{
+    .box(vertical);
+    header{
+        .whb(100%,3.6rem,#f7f7f7);
+        .box;
+        text-align: center;
+        line-height: 3.6rem;
+        border-bottom: 1px solid #e4e4e4;
+        h1{
+            -webkit-box-flex: 1;
+            color: #101010;
+            font-size: 1.6rem;
+        }
+        .back{
+            .whb(3.6rem,3.6rem,none);
+            img{
+                .whb(1rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+        .mess{
+            .whb(3.6rem,3.6rem,none);
+            img{
+                .whb(1.6rem,auto,none);
+                 vertical-align: middle;
+            }
+        }
+    }
+    section{
+        background-color: #f2f2f2;
+        -webkit-box-flex: 1;
+        .main{
+            .whb(100%,auto,white);
+            margin-top: 0.4rem;
+            .title{
+                .box;
+                .whb(100%,2.4rem,none);
+                line-height: 2.4rem;
+                border-bottom: 1px solid #f9f9f9;
+                h1{
+                    font-size: 1.2rem;
+                    color: #060606;
+                    -webkit-box-flex: 1;
+                    padding-left: 1rem;
+                }
+                p{
+                    text-align: right;
+                    font-size: 1.2rem;
+                    color: #686868;
+                    padding-right: 1rem;
+                }
+            }
+            .listBox{
+                padding: 0 1rem;
+                box-sizing: border-box;
+                .list{
+                    .box;
+                    .whb(100%,2rem,none);
+                     line-height: 2rem;
+                     p{
+                        font-size: 1.2rem;
+                        color: #6e6e6e;
+                     }
+                     p:nth-of-type(1){
+                         -webkit-box-flex: 1;
+                     }
+                } 
+            }
+           
+        }
+    }
+}

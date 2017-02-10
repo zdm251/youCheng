@@ -1,0 +1,125 @@
+@import url(../reset.css);
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background-color: none;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3.6rem;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+  line-height: 3.6rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.wrap header h1 {
+  -webkit-box-flex: 1;
+  color: #101010;
+  font-size: 1.6rem;
+}
+.wrap header > div {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: none;
+}
+.wrap header > div img {
+  width: 1rem;
+  height: auto;
+  background-color: none;
+  vertical-align: middle;
+}
+.wrap section {
+  background-color: #f2f2f2;
+  -webkit-box-flex: 1;
+}
+.wrap section .introBox {
+  width: 100%;
+  height: 6.4rem;
+  background-color: #ffffff;
+  margin-top: 0.4rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.wrap section .introBox .intro p {
+  line-height: 2.1rem;
+  font-size: 1.2rem;
+  color: #6f6f6f;
+}
+.wrap section .introBox .intro p em {
+  color: #ff7f1d;
+}
+.wrap section .wayBox {
+  width: 100%;
+  height: 9.4rem;
+  background-color: #ffffff;
+  padding: 0 1rem;
+  margin-top: 0.4rem;
+  box-sizing: border-box;
+}
+.wrap section .wayBox .way > p {
+  border-bottom: 1px solid #fafafa;
+  line-height: 2.4rem;
+  color: #707070;
+  font-size: 1.2rem;
+}
+.wrap section .wayBox .way .zfb {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.4rem;
+  border-bottom: 1px solid #fafafa;
+}
+.wrap section .wayBox .way .zfb > p {
+  -webkit-box-flex: 1;
+  padding-left: 0.8rem;
+  color: #1d1d1d;
+  font-size: 1.2rem;
+}
+.wrap section .wayBox .way .zfb > div img {
+  width: 2rem;
+  height: auto;
+  background-color: none;
+  vertical-align: middle;
+}
+.wrap section .wayBox .way .wx {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.4rem;
+}
+.wrap section .wayBox .way .wx > p {
+  -webkit-box-flex: 1;
+  padding-left: 0.8rem;
+  color: #1d1d1d;
+  font-size: 1.2rem;
+}
+.wrap section .wayBox .way .wx > div img {
+  width: 2rem;
+  height: auto;
+  background-color: none;
+  vertical-align: middle;
+}
+.wrap section .btn {
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 1.8rem;
+}
+.wrap section .btn button {
+  width: 100%;
+  height: 2.6rem;
+  background-color: #ff7f1c;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+}

@@ -1,0 +1,77 @@
+@import url("reset.css");
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+html {
+  font-size: 62.5%;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3.4rem;
+  background-color: none;
+  border-bottom: 1px solid #e6e6e6;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 3.4rem;
+  text-align: center;
+}
+.wrap header > h1 {
+  -webkit-box-flex: 1;
+  font-size: 1.6rem;
+  color: #010101;
+}
+.wrap header > div {
+  width: 2.6rem;
+  height: 3.4rem;
+  background-color: none;
+}
+.wrap header > div img {
+  width: 0.8rem;
+  height: auto;
+  background-color: none;
+  vertical-align: middle;
+}
+.wrap section {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+.wrap section .messListBox {
+  padding: 0.8rem 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: white;
+}
+.wrap section .messListBox .messList {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap section .messListBox .messList .messImg img {
+  width: 3.4rem;
+  height: auto;
+  background-color: none;
+  margin-right: 1.2rem;
+}
+.wrap section .messListBox .messList .messIntro {
+  -webkit-box-flex: 1;
+}
+.wrap section .messListBox .messList .messIntro h1 {
+  font-size: 1.2rem;
+  color: #1d1620;
+}
+.wrap section .messListBox .messList .messIntro p {
+  font-size: 1rem;
+  color: #919191;
+}
+.wrap section .messListBox .messList > p {
+  line-height: 3.4rem;
+  color: #a5a5a5;
+}

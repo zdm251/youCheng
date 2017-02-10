@@ -1,0 +1,73 @@
+@import url("reset.css");
+.box(@var:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @var;
+}
+.whb(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+html,body,.wrap{
+    .whb(100%,100%,#f3f3f3);
+}
+html{
+    font-size: 62.5%;
+}
+.wrap{
+    .box(vertical);
+    header{
+        .whb(100%,3.4rem,none);
+        border-bottom: 1px solid #e6e6e6;
+        .box();
+        line-height: 3.4rem;
+        text-align: center;
+            &>h1{
+                -webkit-box-flex: 1;
+                font-size: 1.6rem;
+                color: #010101;
+            }
+            &>div{
+                .whb(2.6rem,3.4rem,none);
+                img{
+                   .whb(0.8rem,auto,none);
+                   vertical-align: middle;
+                }
+            }
+    
+    }
+    section{
+        .box(vertical);
+        -webkit-box-flex: 1;
+        .messListBox{
+           padding: 0.8rem 1rem;
+           box-sizing: border-box;
+           border-bottom: 1px solid #e8e8e8;
+           background-color: white;
+           .messList{
+               .box;
+               .messImg{
+                   img{
+                       .whb(3.4rem,auto,none);
+                       margin-right: 1.2rem;
+                   }
+               }
+               .messIntro{
+                   -webkit-box-flex: 1;
+                   h1{
+                       font-size: 1.2rem;
+                       color: #1d1620;
+                   }
+                   p{
+                       font-size: 1rem;
+                       color: #919191;
+                   }
+               }
+               &>p{
+                   line-height: 3.4rem;
+                   color: #a5a5a5;
+               }
+           }
+        }
+    }
+}

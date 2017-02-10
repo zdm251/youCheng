@@ -1,0 +1,118 @@
+@import url(../reset.css);
+.box(@var:horizontal){
+    display: -webkit-box;
+    -webkit-box-orient: @var;
+}
+.whb(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background-color: @bg;
+}
+html,body,.wrap{
+    .whb(100%,100%,none);
+}
+html{
+    font-size: 62.5%;
+}
+.wrap{
+    .box(vertical);
+    header{
+        .whb(100%,3.6rem,#f7f7f7);
+        .box;
+        text-align: center;
+        line-height: 3.6rem;
+        border-bottom: 1px solid #e4e4e4;
+        h1{
+            -webkit-box-flex: 1;
+            color: #101010;
+            font-size: 1.6rem;
+        }
+        .back{
+            .whb(3.6rem,3.6rem,none);
+            img{
+                .whb(1rem,auto,none);
+                vertical-align: middle;
+            }
+        }
+        .mess{
+            .whb(3.6rem,3.6rem,none);
+            img{
+                .whb(1.6rem,auto,none);
+                 vertical-align: middle;
+            }
+        }
+    }
+    section{
+        background-color: #F2F2F2;
+        -webkit-box-flex: 1;
+        .menuBox{
+            .whb(100%,3.2rem,white);
+            padding: 0.4rem 0;
+            box-sizing: border-box;
+            .menu{
+                ul{
+                    .box;
+                    li{
+                       text-align: center;
+                       -webkit-box-flex: 1;
+                       height: 2.8rem;
+                       img{
+                           .whb(0.9rem,auto,none);
+                           margin-left: 0.4rem;
+                       }
+                       a{
+                           color: #3d3d3d;
+                           border-right: 1px solid #ebebeb;
+                           display: block;
+                           line-height: 2.4rem;
+                       }
+                       
+                    }
+                    .addColor{
+                        border-bottom: 1px solid #ff6b05;
+                        a{
+                           color: #ff6b05;
+                        } 
+                    }
+                    li:last-child a{
+                          border:none;
+                    }
+                    
+                }
+            }
+        }
+        .listBox{
+            .whb(100%,4.2rem,white);
+            padding: 0.8rem 0.9rem;
+            margin-top: 0.5rem;
+            box-sizing: border-box;
+            .list{
+                color: #797979;
+                .box;
+                .time{
+                    p{
+                        line-height: 1.2rem;
+                    }
+                   .whb(50%,2.4rem,none);
+                   .addBlue{
+                       color: #6a6cba;
+                   }
+                   .addRed{
+                       color: #f65253;
+                   }
+                }
+                .end{
+                    .whb(50%,2.4rem,none);
+                    text-align: right;
+                     p{
+                        line-height: 1.2rem;
+                    }
+                    .addOrange{
+                        color: #fe8837;
+                    }
+                }
+                
+            }
+        }
+    }
+}
